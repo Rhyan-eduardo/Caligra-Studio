@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.MenuBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #4E4E4E;
+    border-top: 1px solid linear-gradient(#666666,#b6b6b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+}
+.MenuBar::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    background: #4e4e4e21;
+}
+#DownloadButton{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    color: #4E4E4E;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    right: 10px;
+    border: 2px solid #4E4E4E;
+    outline: none;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#DownloadButton img{
+    position: absolute;
+    left: 5px;
+    width: 15px;
+}
+#DownloadButton:hover{
+    background: none;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#DownloadButton:active{
+    top: 12px;
+}
+.ButtonBox{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 140px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.ButtonBox button{
+    position: relative;
+    width: 120px;
+    height: 30px;
+    background: none;
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: initial;
+    cursor: pointer;
+    right: 5px;
+    border: none;
+    outline: none;
+}
+.ButtonBox button:hover{
+    background:rgba(0, 0, 0, 0.171);
+    border-radius: 5px;
+}
+.Background01{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 1000px;
+}
+.PageTitle{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4E4E4E;
+    font-size: 80px;
+    top: 80px;
+    left: 50px;
+    word-spacing: 2px;
+    line-height: 55px;
+}
+.StartIllustration{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 500px;
+}
+.Logo{
+    position: absolute;
+    left: 20px;
+    width: 120px;
+}
+#DownloadLocation{
+    position: fixed;
+    left: 30px;
+    bottom: 80px;
+    width: 50px;
+    opacity: 0%;
+    animation: '';
+}
+@keyframes UpToDown {
+    to{
+        opacity: 100%;
+        bottom: -100px;
+    }
+}
+#MobileMenu{
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+#MobileMenu:active{
+    background: #6666663f;
+}
+#MenuBox{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 150px;
+    height: 200px;
+    background: #666666;
+    z-index: 10001;
+    border-radius: 3px;
+
+    display: none;
+
+}
+#DeviceSuport{
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background: rgb(177, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#DeviceSuport::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    background: #4e4e4e21;
+}
+#DeviceSuport img{
+    position: absolute;
+    left: 30px;
+    width: 40px;
+}
+#DeviceSuport p{
+    position: absolute;
+    left: 80px;
+    color: white;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 13px;
+}
+#DeviceSuport h1{
+    position: absolute;
+    right: 20px;
+    color: white;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.Intruduction{
+    position: absolute;
+    font-family: arial;
+    color: #4E4E4E;
+    font-size: 18px;
+    top: 275px;
+    left: 50px;
+}
+#GetStarted{
+    position: absolute;
+    left: 50px;
+    top: 370px;
+    background: #4E4E4E;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    width: 140px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+#GetStarted::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #4e4e4e21;
+    bottom: -5px;
+    left: 0px;
+    border-radius: 0px 0px 3px 3px;
+    transition: all 0.5s;
+}
+.Creations{
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    background: #4E4E4E;
+}
+@media (max-width: 800px){
+    #MobileMenu{
+        display: flex;
+    }
+    .ButtonBox{
+        display: none;
+    }
+    #DownloadButton{
+        display: none;
+    }
+    #DeviceSuport{
+        animation: AlertDevice 1s linear both;
+    }
+}
+@keyframes AlertDevice {
+    to{
+        top: 50px;
+    }
+}
