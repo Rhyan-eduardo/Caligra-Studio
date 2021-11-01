@@ -1,0 +1,19 @@
+{
+  "name": "Core base",
+  "version": "1.0.0",
+  "description": "Data Base Manager Aplication",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.3.0",
+    "watch": "nodemon --exec election ."
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.7"
+  }
+}
