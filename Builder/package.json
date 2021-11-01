@@ -1,7 +1,7 @@
 {
-  "name": "Core base",
+  "name": "Caligra_Studio",
   "version": "1.0.0",
-  "description": "Data Base Manager Aplication",
+  "description": "Artistic text editor",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
