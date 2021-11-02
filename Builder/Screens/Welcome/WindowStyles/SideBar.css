@@ -1,0 +1,128 @@
+.SideBar{
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WelcomeLabel{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding: 10px;
+    background: #E0E0E0;
+    border-radius: 0px 30px 30px 0px;
+    color: #3D3D3D;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 13px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.WelcomeButtonBox{
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.WelcomeButtonBox button{
+    position: relative;
+    left: 0px;
+    padding: 10px;
+    background: #B8B8B8;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.WelcomeButtonBox button:first-of-type{
+    background: #8B8B8B;
+}
+.WelcomeButtonBox button:hover{
+    background: #777777;
+}
+.WelcomeButtonBox button:active{
+    background: #343434;
+}
+
+.HelpLabel{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    padding: 10px;
+    background: #E0E0E0;
+    border-radius: 0px 30px 30px 0px;
+    color: #3D3D3D;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 13px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.HelpButtonBox{
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.HelpButtonBox button{
+    position: relative;
+    left: 0px;
+    padding: 10px;
+    background: #B8B8B8;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    font-family: arial;
+    font-weight: initial;
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.HelpButtonBox button:hover{
+    background: #777777;
+}
+.HelpButtonBox button:active{
+    background: #343434;
+}

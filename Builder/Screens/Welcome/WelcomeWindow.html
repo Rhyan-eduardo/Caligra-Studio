@@ -9,12 +9,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./WindowStyles/WelcomeWindow.css">
     <script src="./WindowScripts/WelcomeWindow.js"></script>
+    <link rel="stylesheet" href="./WindowStyles/SideBar.css">
+    <script src="../../scripts.js"></script>
     <title>Caligra Studio</title>
 
     <!-- END -->
 
 </head>
 <body>
+
+    <!-- WELCOME VIEW -->
+
+    <img src="./WindowAssets/Logos/caligra-icon-png.png" class="Logo" onclick="ReloadPage()">
+
+    <!-- SIDE BAR -->
+
+    <div class="SideBar">
+
+        <label class="WelcomeLabel">Bem vindo</label>
+
+        <div class="WelcomeButtonBox">
+            <button>Abrir</button>
+            <button>Nova escrita</button>
+            <button>Novo projeto</button>
+        </div>
+
+        <label class="HelpLabel">Ajuda</label>
+
+        <div class="HelpButtonBox">
+            <button>Tutoriais</button>
+            <button>Comunidade</button>
+            <button>Relatar algo</button>
+            <button>Site oficial</button>
+        </div>
+
+    </div>
+
+    <!-- END -->
+
+    <div class="TabBox">
+
+        <div class="TabButtonBox">
+            <button>Tamplates</button>
+            <button>Editavéis</button>
+            <button>Recentes</button>
+            <button>+</button>
+        </div>
+
+        <!-- TAB TAMPLATES -->
+
+        <div id="TabTamplate">
+
+            <div>
+                <img src="./WindowAssets/Icons/Tabs/Film-Tamplate-icon.png">
+                <label>Film</label>
+            </div>
+
+            <div>
+                <img src="./WindowAssets/Icons/Tabs/Pdf-Tamplate-icon.png">
+                <label>PDF</label>
+            </div>
+
+            <div>
+                <img src="./WindowAssets/Icons/Tabs/E-Book-Tamplate-icon.png">
+                <label>E-BOOK</label>
+            </div>
+
+            <div>
+                <img src="./WindowAssets/Icons/Tabs/Test-Tamplate-icon.png">
+                <label>Test</label>
+            </div>
+            
+            <div>
+                <img src="./WindowAssets/Icons/Tabs/Agenda-Tamplate-icon.png">
+                <label>Agenda</label>
+            </div>
+
+        </div>
+
+        <!-- END -->
+
+    </div>
+    
+    <!-- WATER MARK -->
+
+    <img src="./WindowAssets/WaterMarks/logo-watermark-png.png" class="WaterMark">
+
+    <!-- END -->
+
+    <!-- END -->
     
 </body>
 </html>
