@@ -58,6 +58,7 @@
     margin-bottom: 10px;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: all 0.4s;
 }
 .WelcomeButtonBox button:first-of-type{
     background: #8B8B8B;
@@ -67,6 +68,12 @@
 }
 .WelcomeButtonBox button:active{
     background: #343434;
+    width: 70%;
+}
+.WelcomeButtonBox button img{
+    position: absolute;
+    left: 7px;
+    width: 15px;
 }
 
 .HelpLabel{
@@ -119,10 +126,17 @@
     margin-bottom: 10px;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: all 0.4s;
 }
 .HelpButtonBox button:hover{
     background: #777777;
 }
 .HelpButtonBox button:active{
     background: #343434;
+    width: 70%;
+}
+.HelpButtonBox button img{
+    position: absolute;
+    left: 7px;
+    width: 15px;
 }

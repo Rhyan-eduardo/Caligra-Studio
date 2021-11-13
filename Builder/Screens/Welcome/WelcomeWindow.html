@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./WindowStyles/WelcomeWindow.css">
+    <script src="../../main.js"></script>
     <script src="./WindowScripts/WelcomeWindow.js"></script>
     <link rel="stylesheet" href="./WindowStyles/SideBar.css">
+    <link rel="stylesheet" href="./WindowStyles/Message.css">
     <script src="../../scripts.js"></script>
     <title>Caligra Studio</title>
 
@@ -17,6 +19,12 @@
 
 </head>
 <body>
+
+    <!-- LIB TOOL TIP -->
+	
+	<script src="../../Libs/Wz Tooltip/wz_tooltip.js" type="text/javascript"></script>
+
+	<!-- END -->
 
     <!-- WELCOME VIEW -->
 
@@ -29,18 +37,18 @@
         <label class="WelcomeLabel">Bem vindo</label>
 
         <div class="WelcomeButtonBox">
-            <button>Abrir</button>
-            <button>Nova escrita</button>
-            <button>Novo projeto</button>
+            <button id="OpenAction" onmouseover="Tip('Abrir arquivo ou projeto', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/open-folder-icon-svg.svg">Abrir</button>
+            <button id="NewFileAction" onmouseover="Tip('Novo arquivo', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/New-file-icon-svg.svg">Nova escrita</button>
+            <button id="NewProjectAction" onmouseover="Tip('Novo projeto', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/new-project-icon-svg.svg">Novo projeto</button>
         </div>
 
         <label class="HelpLabel">Ajuda</label>
 
         <div class="HelpButtonBox">
-            <button>Tutoriais</button>
-            <button>Comunidade</button>
-            <button>Relatar algo</button>
-            <button>Site oficial</button>
+            <button onmouseover="Tip('Aulas Práticas no Youtube', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/Tutorials-icon-svg.svg">Tutoriais</button>
+            <button onmouseover="Tip('Tire suas Duvidas no Forúm Caligra', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/Community-icon-svg.svg">Comunidade</button>
+            <button onmouseover="Tip('Encontrou algum erro? Nos informe!', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar//bug-icon-svg.svg">Relatar algo</button>
+            <button onmouseover="Tip('Site Oficial do Caligra na Web', LEFT, true, BGCOLOR, '#D5D1D1', FADEIN, 400)" onmouseout="UnTip()"><img src="./WindowAssets/Icons/Side-Bar/home-page-icon-svg.svg">Site oficial</button>
         </div>
 
     </div>
@@ -50,8 +58,8 @@
     <div class="TabBox">
 
         <div class="TabButtonBox">
+            <button>Novo</button>
             <button>Tamplates</button>
-            <button>Editavéis</button>
             <button>Recentes</button>
             <button>+</button>
         </div>
@@ -89,7 +97,46 @@
 
         <!-- END -->
 
+        <!-- INFORMATION AREA -->
+
+        <span class="InformationTab">Baixar mais Conteúdos</span>
+
+        <!-- END -->
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="SocialBox">
+
+        <img src="./WindowAssets/Icons/Social-Media/facebook-icon-svg.svg">
+        <img src="./WindowAssets/Icons/Social-Media/instagram-icon-svg.svg">
+        <img src="./WindowAssets/Icons/Social-Media/tt-icon-svg.svg">
+
+        </div>
+
+    <!-- END -->
+
     </div>
+
+    <!-- MESSAGE -->
+
+    <div id="MessageShow">
+
+        <button>&bull;</button>
+
+        <p>
+        ""
+        </p>
+
+    </div>
+
+    <!-- END -->
+
+    <!-- COPYRIGHT -->
+
+    <span class="Copyright">&copy; 2021 Uno Network Offices Inc.</span>
+    <span class="SubRight">All Rights reseverds.</span>
+
+    <!-- END -->
     
     <!-- WATER MARK -->
 

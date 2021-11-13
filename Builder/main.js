@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
 
 function createWindow () {
   // Cria uma janela de navegação.
@@ -12,10 +12,29 @@ function createWindow () {
     //minHeight: 700,
   });
 
-  // e carregar o index.html do aplicativo.
+  win.maximize();
   win.removeMenu();
   win.loadFile('Screens/Welcome/WelcomeWindow.html')
+
 }
 
 app.whenReady().then(createWindow)
+
+function CreateNewFileWindow(){
+  let NewFileWindow = new BrowserWindow({
+      width: 733,
+      height: 403,
+      resizable: false,
+      frame: true,
+      icon: __dirname + "./Screens/CreateFile/WindowAssets/icons/new-file-icon_2.png",
+      minimizable: false,
+      modal: true,
+      parent: win,
+      title: 'Criar',
+      show: false
+  });
+  NewFileWindow.removeMenu();
+  NewFileWindow.loadFile('Screens/CreateFile/CreateFileWindow.html')
+}
+
 

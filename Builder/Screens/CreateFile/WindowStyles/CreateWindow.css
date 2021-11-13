@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.ConBox{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: #E2E2E2;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ConBoxButtonBox{
+    position: absolute;
+    right: 8px;
+    width: auto;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.ConBoxButtonBox button{
+    position: relative;
+    width: 100px;
+    height: 95%;
+    background: #D6D5D5;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: initial;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.ConBoxButtonBox button:hover{
+    background: #C9C9C9;
+}
